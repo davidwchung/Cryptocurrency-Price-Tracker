@@ -1,13 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+
+.text-bold {
+    display: block;
+    font-weight: bold;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.night-mode-toggle {
+    text-align: right;
+    margin: 5px;
 }
+
+.night-mode-icon{
+    display: inline-flex;
+    vertical-align: top;
+    padding-right: 4px;
+    margin-top: 5px;
+}
+
+.header {
+    margin-top: 50px;
+    line-height:0.7em;
+    text-align: center;
+}
+  
+.header p {
+    display: inline;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.header a {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.footer {
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+}
+
+.main-container {
+    background-image: linear-gradient( #ebfafc, #f7fafa);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    position:absolute;
+    min-width: 100%;
+    min-height: 100%;
+    color: black;
+}
+
+.main-container-night {
+    background-color: #1a1a1c;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    position:absolute;
+    min-width: 100%;
+    min-height: 100%;
+    color: white;
+}
+
+.currency-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.currency-container-night {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #808080;
+}
+
+.search-form {
+    width: 300px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+.search {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: black;
+    width: 276px;
+    border-bottom: 2px solid #E0E0E0;
+}
+
+.search-night {
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    color: white;
+    width: 276px;
+    border-bottom: 2px solid #E0E0E0;
+}
+
+.search-icon {
+    color: #E0E0E0;
+    text-align: right;
+    margin-top: 2px;
+    padding-right: 5px;
+}
+
+.search:focus {
+    outline: none;
+}
+
+.search-night:focus {
+    outline: none;
+}
+
+.currency-headers {
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.currency {
+    display: flex;
+    border-top: 1px solid #E0E0E0;
+    height: 50px;
+    align-items: center;
+}
+
+.currency-night {
+    display: flex;
+    border-top: 1px solid #808080;
+    height: 50px;
+    align-items: center;
+}
+
+.currency img{
+    width: 1%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.currency-night img{
+    width: 1%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.currency:hover {
+    transition: all ease 0.15s;
+    transform: translatex(5px) translatey(-5px);
+}
+
+.currency-rank {
+    text-align: center;
+    width: 4%;
+}
+
+.currency-icon {
+    text-align: center;
+    width: 3%;
+}
+
+.currency-name {
+    text-align: center;
+    width: 15%;
+}
+
+.currency-symbol {
+    text-align: center;
+    width: 10%;
+}
+
+.currency-price {
+    text-align: center;
+    width: 11%;
+}
+
+.currency-24h {
+    text-align: center;
+    width: 9%;
+}
+
+.currency-market-cap {
+    text-align: center;
+    width: 16%;
+}
+
+.currency-volume-24h {
+    text-align: center;
+    width: 15%;
+}
+
+.currency-circulating-supply {
+    text-align: center;
+    width: 16%;
+}
+
+.currency-stats {
+    display: inline-flex;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #E0E0E0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.currency-stats-night {
+    display: inline-flex;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #808080;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.currency-stats-first-column {
+    width: 22.5%;
+    padding-left: 5%;
+}
+
+.currency-stats-second-column {
+    width: 22.5%;
+}
+
+.currency-stats-third-column {
+    width: 22.5%;
+}
+
+.currency-stats-fourth-column {
+    width: 22.5%;
+    padding-right: 5%;
+}
+
+.increase {
+    color: #009900;
+}
+
+.decrease {
+    color: #FF0000;
+}
+
+@media(max-width:2000px) {
+    .currency-container {
+        width: 80%;
+        font-size: 14px;
+    }
+}
+
