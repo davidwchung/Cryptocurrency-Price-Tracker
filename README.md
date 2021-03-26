@@ -1,3 +1,7 @@
+This project is hosted at:
+
+https://crypto-price-tracker-bf439.web.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
