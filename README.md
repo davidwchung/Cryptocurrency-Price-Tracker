@@ -1,4 +1,4 @@
-This project is hosted at:
+# This project can be found at:
 
 https://crypto-price-tracker-bf439.web.app/
 
